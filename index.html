@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="francais">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <h1>Formulaire type</h1>
+</head>         
+
+<body>
+    <form action="index.html">
+        <div>
+            <p>
+                <span>
+                  Nom <br>
+                <input type="text" id="nom" placeholder="Entrez nom"> <br> <br>
+                Prenom <br>
+                <input type="text" id="prenom" placeholder="Entrez prenom"> <br> <br>
+                Je désire recevoir de la documentation<input type="checkbox" id="documentation" value="option1" name="options"> <br> <br>
+                E-mail:<input id="mail" type="email"><br> <br>
+                <input type="file" id="file" accept="application/pdf"> <br> <br>
+                A partir de quelle dates etes-vous disponible ?<input type="date" id="debut" name="date-debut" value="" min="07/04/2022" max=""><br> <br> <br>
+                Les Mogwais sont des animaux très mignon mais il existe plusieurs regles. <strong> Ne jamais les nourrir après minuit.</strong><br><br><br>
+                <select name="pays" id="payschoix">
+                     <option value="choisir">Choisir le pays</option>
+                     <option value="France">France</option>
+                     <option value="Allemagne">Allemagne</option>
+                </select><br><br>
+                    <legend>Sexe</legend>
+                    <input type="radio" id="masculin" name="choix" value="masculin"checked>  <!-- bouton radio avec box-->
+                    <label for="masculin">Masculin</label>
+                    <input type="radio" id="feminin" name="choix" value="feminin">
+                    <label for="feminin">Feminin</label>
+            
+            </span>
+        </p>
+    </div>  
+</body>
+<head>
+    <h1>Langage(e) preferée</h1>
+</head>
+<head>
+    Vous pouvez en chosir plus d'un... <br><br>
+</head>
+<body>
+    <input type="checkbox" id="js" value="option1" name="options">&nbsp; Javascript &nbsp;<input type="checkbox" id="pt" value="option1" name="options">&nbsp;Python<input type="checkbox" id="php" value="option1" name="options">&nbsp;PHP<input type="checkbox" id="autre" value="option1" name="options">&nbsp;Autre
+    <h3>Commentaires</h3> <br><br>
+    <label for="com">Si vous le souhaitez, vous pouvez nous expliquer le projet qui nécessite ces informations:</label><br><br>
+     <textarea id="com" name="commentaire"
+          rows="5" cols="100">
+          en quelque mots...
+     </textarea> <br><br>
+      <input type="submit" value="Envoyer le formulaire">
+      <input type="reset" value="Reset les champs">
+    </form>
+</body>
+
+</html> 
